@@ -112,7 +112,7 @@
    }
  }
  
- // creating Iron Man's Hand Repulsion Hand/Glove
+ // creating Iron Man's Hand Repulsor Hand Cannon
  void problem4() {
      glPushMatrix();
  
