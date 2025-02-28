@@ -98,13 +98,13 @@
  
  void problem3() {
    int rows = 6; // Number of rows of teapots
-   float baseHeight = -1.5; // Adjust this value to move the entire pyramid on the y-axis
+   float baseHeight = -1.5; // Adjust this value to move the entire triangle on the y-axis
    for (int i = 0; i < rows; i++) {
      for (int j = 0; j <= i; j++) {
        glPushMatrix();
        float xOffset = (j - i / 2.0f) * 0.6f;
        float yOffset = baseHeight + i * 0.6f; 
-       // + makes the pyramid upside down, - makes it upright, 3rd value smaller = places the teapots closer to each other
+       // + makes the triangle upside down, - makes it upright, 3rd value smaller = places the teapots closer to each other
        glTranslatef(xOffset, yOffset, 0);
        glutSolidTeapot(0.3);
        glPopMatrix();
